@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@600;700&display=swap'); 
+
+:root {
+    --montserrat-font: 'Montserrat', sans-serif;
+    --open-sans-font: 'Open Sans', sans-serif; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--open-sans-font);
+}
+
+.header {
+    padding-top: 10px;
+}
+.scroll-line {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 13px 0;
+    font-family: var(--montserrat-font);
+}
