@@ -1,22 +1,107 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@600;700&display=swap'); 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 :root {
     --montserrat-font: 'Montserrat', sans-serif;
     --open-sans-font: 'Open Sans', sans-serif; 
 }
+@keyframes move-rtl {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
 
 body {
-    margin: 0;
-    padding: 0;
     font-family: var(--open-sans-font);
+    overflow: hidden;
 }
-
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
 .header {
     padding-top: 10px;
+    margin-bottom: 100px;    
 }
 .scroll-line {
+    font-size: 20px;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     padding: 13px 0;
     font-family: var(--montserrat-font);
 }
+.offer {
+    padding-left: 214px;
+}
+.slider {
+    gap: 30px;
+    padding-left: 100px;
+}
+.offer-heading {
+    font-family: var(--open-sans-font);
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 91px;
+    text-transform: uppercase;
+    vertical-align: top;
+    letter-spacing: 0.01em;
+}
+.offer-subheading {
+    margin-top: 10px;
+    font-family: var(--montserrat-font);
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: lowercase;
+    margin-bottom: 50px;
+    line-height: 29px;
+    color: black;
+}
+.order-btn {
+    text-decoration: none;
+    color: white;
+    line-height: 33px;
+    font-size: 24px;
+    font-family: var(--open-sans-font);
+    font-weight: 600;
+    padding: 18.5px 72.5px;
+    background: #000;
+}
+.social-media {
+    padding-left: 223px;
+    margin-top: 53px;
+    display: flex;
+    gap: 15px;
+}
+.social-media img {
+    width: 20px;
+    height: 20px;
+}
+.view-more-div{
+    margin-top: 46px;
+    padding-right: 200px;
+}
+.view-more {
+    text-decoration: none;
+    color: black;
+    text-transform: lowercase;
+    font-family: var(--montserrat-font);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+.view-more-div img {
+    position: relative;
+    top: 7px;
+    margin-left: 7px;
+}
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
