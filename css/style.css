@@ -4,23 +4,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 :root {
     --montserrat-font: 'Montserrat', sans-serif;
     --open-sans-font: 'Open Sans', sans-serif; 
 }
-@keyframes move-rtl {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
 
 body {
     font-family: var(--open-sans-font);
-    overflow: hidden;
+    overflow-x: hidden;
+}
+.about-pam-jones, .offer, .logo, .portfolio{
+    padding-left: 214px;
 }
 .wrapper {
     display: flex;
@@ -28,7 +22,7 @@ body {
 }
 .header {
     padding-top: 10px;
-    margin-bottom: 100px;    
+    margin-bottom: 25px;    
 }
 .scroll-line {
     font-size: 20px;
@@ -37,12 +31,8 @@ body {
     padding: 13px 0;
     font-family: var(--montserrat-font);
 }
-.offer {
-    padding-left: 214px;
-}
-.slider {
-    gap: 30px;
-    padding-left: 100px;
+.logo {
+    margin-bottom: 25px;
 }
 .offer-heading {
     font-family: var(--open-sans-font);
@@ -73,6 +63,10 @@ body {
     padding: 18.5px 72.5px;
     background: #000;
 }
+.slider {
+    gap: 30px;
+    padding-left: 100px;
+}
 .social-media {
     padding-left: 223px;
     margin-top: 53px;
@@ -101,7 +95,58 @@ body {
     top: 7px;
     margin-left: 7px;
 }
-@keyframes marquee {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
-  }
+.about-pam-jones {
+    margin-top: 78px;
+    margin-bottom: 78px;
+}
+.about-pam-heading, .portfolio-heading {
+    font-family: var(--open-sans-font);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 47px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 50px;
+}
+.about-pam {
+    gap: 130px;
+    align-items: center;
+}
+.about-pam-heading span, .portfolio-heading span {
+    position: absolute;
+    font-size: 70px;
+    color: rgba(0, 0, 0, 0.02);
+    top: -22px;
+    left: 0px;
+}
+.about-pam-text {
+    font-size: 24px;
+    font-family: var(--montserrat-font);
+    font-weight: 500;
+    line-height: 29px;
+    color: #000000;
+    padding-right: 140px;
+}
+.read-more-div {
+    position: relative;
+    top: -51px;
+    left: 968px;
+}
+.read-more {
+    text-decoration: none;
+    color: black;
+    text-transform: lowercase;
+    font-family: var(--montserrat-font);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;   
+}
+.read-more-div img {
+    position: relative;
+    top: 7px;
+    margin-left: 7px;
+}
+.portfolio {
+    margin-top: ;
+}
