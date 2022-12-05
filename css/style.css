@@ -147,6 +147,8 @@ body {
     top: 7px;
     margin-left: 7px;
 }
+
+/* PORTFOLIO BLOCK */ 
 .price-photos{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
