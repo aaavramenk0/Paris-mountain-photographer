@@ -17,7 +17,7 @@ body {
     font-family: var(--open-sans-font);
 }
 .about-pam-jones, .offer, .logo, .portfolio, .price {
-    padding-left: 214px;
+    padding-left: 120px;
 }
 .wrapper {
     display: flex;
@@ -71,8 +71,8 @@ body {
     padding-left: 100px;
 }
 .social-media {
-    padding-left: 223px;
-    margin-top: 53px;
+    padding-left: 140px;
+    margin-top: 30px;
     display: flex;
     gap: 15px;
 }
@@ -81,7 +81,7 @@ body {
     height: 20px;
 }
 .view-more-div{
-    margin-top: 46px;
+    margin-top: 23px;
     padding-right: 200px;
 }
 .view-more {
@@ -124,17 +124,17 @@ body {
     left: 0px;
 }
 .about-pam-text {
-    font-size: 24px;
+    font-size: 28px;
     font-family: var(--montserrat-font);
     font-weight: 500;
-    line-height: 29px;
+    line-height: 37px;
     color: #000000;
-    padding-right: 140px;
+    padding-right: 104px;
 }
 .read-more-div {
     position: relative;
     top: -51px;
-    left: 968px;
+    left: 1071px;
 }
 .read-more, .price-link {
     text-decoration: none;
@@ -151,7 +151,12 @@ body {
     margin-left: 7px;
 }
 
-/* PORTFOLIO BLOCK MUST BE HERE*/ 
+.portfolio-slider{
+    margin-bottom: 50px;
+    display: flex;
+    column-gap: 30px;
+}
+
 
 .price-photos{
     display: grid;
