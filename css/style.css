@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@600;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -16,8 +16,8 @@ body {
     position: relative;
     font-family: var(--open-sans-font);
 }
-.about-pam-jones, .offer, .logo, .portfolio, .price {
-    padding-left: 120px;
+.about-pam-jones, .offer, .logo, .portfolio, .price, .want-photo {
+    margin-left: 120px;
 }
 .wrapper {
     display: flex;
@@ -34,8 +34,27 @@ body {
     padding: 13px 0;
     font-family: var(--montserrat-font);
 }
-.logo {
+.navbar {
+    display: flex;
+    align-items: center;
+    column-gap: 100px;
     margin-bottom: 25px;
+}
+.logo {
+    margin-left: 125px;
+    margin-right: 153px;
+}
+.navbar-link {
+    text-decoration: none;
+    font-family: var(--montserrat-font);
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: lowercase;
+    color: #000;
+}
+.navbar-link:hover{
+    font-weight: 400;
 }
 .offer-heading {
     font-family: var(--open-sans-font);
@@ -102,7 +121,7 @@ body {
     margin-top: 78px;
     margin-bottom: 78px;
 }
-.about-pam-heading, .portfolio-heading, .price-heading {
+.about-pam-heading, .portfolio-heading, .price-heading, .want-photo-heading {
     font-family: var(--open-sans-font);
     font-weight: 700;
     font-size: 36px;
@@ -116,7 +135,7 @@ body {
     gap: 130px;
     align-items: center;
 }
-.about-pam-heading span, .portfolio-heading span, .price-heading span {
+.about-pam-heading span, .portfolio-heading span, .price-heading span, .want-photo-heading span {
     position: absolute;
     font-size: 70px;
     color: rgba(0, 0, 0, 0.02);
@@ -150,13 +169,14 @@ body {
     top: 7px;
     margin-left: 7px;
 }
-
 .portfolio-slider{
     margin-bottom: 50px;
     display: flex;
     column-gap: 30px;
 }
-
+.all-photos-div{
+    margin-top: 70px;
+}
 
 .price-photos{
     display: grid;
@@ -179,6 +199,10 @@ body {
     margin-top: -29px;
     margin-bottom: 29px;
     margin-right: 57px;
+}
+
+.want-photo {
+    margin-top: 60px;
 }
 
 @media screen and (max-width: 1081px) {
