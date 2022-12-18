@@ -267,7 +267,7 @@ input::placeholder {
     color: rgba(75, 75, 75, 0.49);
 }
 .form-btn {
-    margin-top: 30px;
+    margin: 30px 0;
     padding: 19px 73px;
     text-align: center;
     width: 75%;
@@ -279,17 +279,38 @@ input::placeholder {
     font-size: 24px;
     line-height: 33px;
 }
-.social-media {
+.form-social-media {
     padding-left: 0px;
-    margin-top: 30px;
-    display: flex;
-    gap: 15px;
+    align-items: center;
 }
-.social-media img {
-    width: 20px;
-    height: 20px;
+.social-media {
+    margin-top: 0px;
+}
+.line {
+    border: 1px solid #000;
+    background-color: #000;
+    height: 34px;
+    align-self: center;
+}
+.adress {
+    font-size: 10px;
+    font-family: var(--open-sans-font);
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0.01em;
+}
+.number{
+    font-family: var(--open-sans-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
 }
 
+
+
+/* KEYFRAMES FOR ANIMATION */
 @keyframes scroll-to-left {
     from {
         transform: translateX(0);
@@ -307,63 +328,4 @@ input::placeholder {
     }
 }
 
-@media screen and (max-width: 1081px) {
-    .about-pam-jones, .offer, .logo, .portfolio, .price {
-        padding-left: 15px;
-    }
-    .social-media {
-        padding-left: 20px;
-        margin-top: 35px;
-        display: flex;
-        gap: 15px;
-    }
-    .slider {
-        display: none;
-    }
-    .view-more-div {
-        display: none;
-    }
-    .about-pam {
-        display: block;
-    }
-    .about-pam-heading, .portfolio-heading, .price-heading {
-        font-size: 24px;
-        margin-bottom: 15px;
-    }
-    .about-pam-heading span, .portfolio-heading span, .price-heading span {
-        font-size: 30px;
-        color: rgba(0, 0, 0, 0.04);
-        top: -11px;
-    }
-    .about-pam-jones {
-        margin-top: 50px;
-        margin-bottom: 78px;
-    }
-    .photo-of-pam {
-        margin-top: 0px;
-    }
-    .about-pam-text {
-        font-size: 18px;
-        font-family: var(--montserrat-font);
-        font-weight: 500;
-        line-height: 29px;
-        color: #000000;
-        padding-right: 10px;
-    }
-    br {
-        size: 1px;
-    }
-    .price-photos{
-        display: block;
-
-    }   
-    .price-link-text {
-        text-align: center;
-        margin-top: 0px;
-        margin-bottom: 10px;
-        margin-right: 0px;
-    }
-    .photo1, .photo2, .photo3 {
-        margin-bottom: 25px;
-    }
-}
+/* MEDIA QUERIES FOR RESPONSIVE*/
