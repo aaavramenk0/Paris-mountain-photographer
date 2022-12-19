@@ -103,33 +103,52 @@ body {
     background: #000;
 }
 .slider {
-    margin-left: 70px;
-    overflow: hidden;
-    position: relative;
-    user-select: none;
-    display: flex;
-    min-width: 100%;
+    width: 100%;
+    padding-left: 107px;
 }
-.photo-scroll {
-    flex-shrink: 0;
-    min-width: 100%;
+.photos {
+    display: flex;
     justify-content: space-around;
-    gap: 30px;
-    margin-right: 30px;
-    animation: scroll-to-left 50s linear infinite;
+}
+.photo-slider {
+    display: flex;
+    flex-direction: column;
+}
+
+.invisible {
+    display: none;
+}
+.dots {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    cursor: pointer;
+}
+.active-dot {
+    background-color: #6B6B6B;
+}
+.social-media-div {
+    margin-top: 50px;
 }
 .social-media {
     padding-left: 140px;
-    margin-top: 30px;
     display: flex;
     gap: 15px;
+    align-items: flex-end;
 }
 .social-media img {
     width: 20px;
     height: 20px;
 }
+
 .view-more-div{
-    margin-top: 23px;
     padding-right: 200px;
 }
 .view-more {
@@ -139,7 +158,6 @@ body {
     font-family: var(--montserrat-font);
     font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
 }
 .view-more-div img {
     position: relative;
@@ -205,13 +223,13 @@ body {
 .portfolio-photo-scroll-to-left {
     flex-shrink: 0;
     min-width: 100%;
-    animation: scroll-to-left 50s linear infinite;
+    animation: scroll-to-left 60s linear infinite;
 }
 .portfolio-photo-scroll-to-right {
     float: right;
     flex-shrink: 0;
     min-width: 100%;
-    animation: scroll-to-right 50s linear infinite;
+    animation: scroll-to-right 60s linear infinite;
 }
 .portfolio-photo-scroll-to-right img, .portfolio-photo-scroll-to-left img  {
     margin-right: 25px;
@@ -251,7 +269,6 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
-    
     width: 370px;
 }
 .form input {
