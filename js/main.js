@@ -1,48 +1,21 @@
 const dots = document.querySelectorAll('.dot');
-const imgs = document.querySelectorAll('.slider-photo');
+const imgDiv = document.querySelectorAll('.slide-div')
 
-
-for (let dotIndex = 0; dotIndex < dots.length; dotIndex++) { 
-    dots[dotIndex].addEventListener("click", () => {
-        /* Piece of code must be here*/
-        let imgIndex = dotIndex;
-        if (imgIndex == 0) {
-            imgs[2].classList.add('invisible')
-            imgs[3].classList.add('invisible')
-            imgs[0].classList.remove('invisible')
-            imgs[1].classList.remove('invisible')
-        } else if (imgIndex == 1) {
-            imgs[0].classList.add('invisible')
-            imgs[3].classList.add('invisible')
-            imgs[1].classList.remove('invisible')
-            imgs[2].classList.remove('invisible')
-        } else if (imgIndex == 2) {
-            imgs[0].classList.add('invisible')
-            imgs[1].classList.add('invisible')
-            imgs[2].classList.remove('invisible')
-            imgs[3].classList.remove('invisible')
-        } else if (imgIndex == 3) {
-            imgs[1].classList.add('invisible')
-            imgs[2].classList.add('invisible')
-            imgs[3].classList.remove('invisible')
-            imgs[0].classList.remove('invisible')
-        }
-        
-    });
+for (let dotIndex = 0; dotIndex < dots.length; dotIndex++) {
+    if (!dots[dotIndex].classList.contains('active-dot')) {
+        dots[dotIndex].addEventListener("click", () => {
+            activeSlideHandler(dotIndex);
+        })
+    }
 }
 
-
-
-
-/* Piece of code
-    for (let imgIndex = 0; imgIndex < imgs.length; imgIndex++) {
-           if (imgIndex != dotIndex) {
-                imgs[imgIndex].classList.add('invisible');
-                dots[imgIndex].classList.remove('active-dot');
-            } else {
-                imgs[imgIndex].classList.remove('invisible');
-                dots[imgIndex].classList.add('active-dot');
-            }
-        }
-
-*/
+const activeSlideHandler = (dotIndex) => {
+    for (let divIndex = 0; divIndex < imgDiv.length; divIndex++) {
+        imgDiv[divIndex].classList.add('invisible');
+        dots[divIndex].classList.remove('active-dot');
+    }
+    imgDiv[dotIndex].classList.remove('invisible');
+    imgDiv[dotIndex].classList.add('animate__jackInTheBox');
+    imgDiv[dotIndex].style.setProperty('--animate-duration', '1.7s');
+    dots[dotIndex].classList.add('active-dot');
+}
