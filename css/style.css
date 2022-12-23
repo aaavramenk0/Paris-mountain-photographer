@@ -10,6 +10,7 @@
 }
 html {
     scroll-behavior: smooth;
+    scroll-margin: 2em;
 }
 html, body {
     overflow-x: hidden;
@@ -262,6 +263,7 @@ body {
 
 .want-photo {
     margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .form {
@@ -323,6 +325,41 @@ input::placeholder {
     font-size: 16px;
     line-height: 21px;
     letter-spacing: 0.01em;
+}
+.footer {
+    background: rgba(28, 28, 28, 1);
+    padding: 50px 0;
+}
+.footer-wrapper {
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+.company-info {
+    text-align: center;
+}
+.footer-name {
+    font-family: var(--montserrat-font);
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: capitalize;
+    color: #C9C9C9;
+}
+.footer-navbar {
+    column-gap: 60px;
+    margin-bottom: 0;
+}
+.footer-navbar-link {
+    font-weight: 400;
+    color: #C9C9C9;
+}
+.footer-social-media {
+    padding-left: 0px;
+}
+.social-media img {
+    width: 20px;
+    height: 20px;
 }
 
 
