@@ -326,9 +326,10 @@ input::placeholder {
     line-height: 21px;
     letter-spacing: 0.01em;
 }
+
 .footer {
     background: rgba(28, 28, 28, 1);
-    padding: 50px 0;
+    padding: 50px 0 15px 0;
 }
 .footer-wrapper {
     justify-content: center;
@@ -360,6 +361,23 @@ input::placeholder {
 .social-media img {
     width: 20px;
     height: 20px;
+}
+.footer-company-name {
+    font-family: var(--montserrat-font);
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #C9C9C9;
+    text-align: center;
+    margin-top: 20px;
+}
+.login {
+    font-family: var(--montserrat-font);
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    text-decoration: none;  
 }
 
 
