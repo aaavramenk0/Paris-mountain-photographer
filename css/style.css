@@ -71,7 +71,7 @@ body {
     color: #000;
 }
 .navbar-link:hover{
-    font-weight: 400;
+    font-weight: 500;
 }
 .offer-heading {
     font-family: var(--open-sans-font);

@@ -2,10 +2,10 @@
 const logo = document.getElementById('logo');
 
 logo.addEventListener("mouseover", () => {
-    logo.classList.add('animate__swing');
+    logo.classList.add('animate__pulse');
 })
 logo.addEventListener('animationend', () => {
-    logo.classList.remove('animate__swing');
+    logo.classList.remove('animate__pulse');
 });
 
 
@@ -14,10 +14,10 @@ const navbarItem = document.querySelectorAll('.navbar-link');
 
 for (let navbarIndex = 0; navbarIndex < navbarItem.length; navbarIndex++) {
     navbarItem[navbarIndex].addEventListener("mouseover", () => {
-        navbarItem[navbarIndex].classList.add('animate__bounce');
+        navbarItem[navbarIndex].classList.add('animate__pulse');
     })
     navbarItem[navbarIndex].addEventListener("animationend", () => {
-        navbarItem[navbarIndex].classList.remove('animate__bounce');
+        navbarItem[navbarIndex].classList.remove('animate__pulse');
     })
 }
 
