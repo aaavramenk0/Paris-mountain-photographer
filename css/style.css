@@ -101,39 +101,9 @@ body {
     font-weight: 600;
     padding: 18.5px 72.5px;
     background: #000;
+    display: block;
+    width: 270px;
 }
-/* .slider {
-    width: 100%;
-    padding-left: 107px;
-}
-.photos {
-    display: flex;
-    justify-content: space-around;
-}
-.photo-slider {
-    display: flex;
-    flex-direction: column;
-}
-.invisible {
-    display: none;
-}
-.dots {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-.dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #D9D9D9;
-    cursor: pointer;
-}
-.active-dot {
-    background-color: #6B6B6B;
-} */
-
 .slider {
     width: 100%;
     padding-left: 107px;
@@ -163,7 +133,7 @@ body {
 }
 
 .social-media-div {
-    margin-top: 50px;
+    margin-top: 25px;
 }
 .social-media {
     padding-left: 140px;
@@ -323,6 +293,7 @@ input::placeholder {
     font-family: var(--open-sans-font);
     font-size: 24px;
     line-height: 33px;
+    cursor: pointer;
 }
 .form-social-media {
     padding-left: 0px;
