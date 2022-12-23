@@ -31,12 +31,26 @@ orderBtn.addEventListener('animationend', () => {
     orderBtn.classList.remove('animate__pulse');
 });
 
-/* View more, read more, all photos, price animations*/ 
-const formBtn = document.querySelector('.form-btn');
+/*Services link animation */ 
+const serviceLinks = document.querySelectorAll('.service-link');
 
-orderBtn.addEventListener("mouseover", () => {
-    formBtn.classList.add('animate__pulse');
-})
-orderBtn.addEventListener('animationend', () => {
-    formBtn.classList.remove('animate__pulse');
-});
+for (let serviceLinkIndex = 0; serviceLinkIndex < serviceLinks.length; serviceLinkIndex++) {
+    serviceLinks[serviceLinkIndex].addEventListener("mouseover", () => {
+        serviceLinks[serviceLinkIndex].classList.add('animate__pulse');
+    })
+    serviceLinks[serviceLinkIndex].addEventListener("animationend", () => {
+        serviceLinks[serviceLinkIndex].classList.remove('animate__pulse');
+    })
+}
+
+/* Service photo animation */
+const servicePhotos = document.querySelectorAll('.service-photo');
+
+for (let servicePhotoIndex = 0; servicePhotoIndex < servicePhotos.length; servicePhotoIndex++) {
+    servicePhotos[servicePhotoIndex].addEventListener("mouseover", () => {
+        servicePhotos[servicePhotoIndex].classList.add('animate__pulse');
+    })
+    servicePhotos[servicePhotoIndex].addEventListener("animationend", () => {
+        servicePhotos[servicePhotoIndex].classList.remove('animate__pulse');
+    })
+}

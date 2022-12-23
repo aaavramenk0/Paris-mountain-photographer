@@ -16,7 +16,7 @@ body {
     position: relative;
     font-family: var(--open-sans-font);
 }
-.about-pam-jones, .offer, .logo, .portfolio-heading, .price, .want-photo {
+.about-pam-jones, .offer, .logo, .portfolio-heading, .prices, .services, .want-photo {
     margin-left: 120px;
 }
 .wrapper {
@@ -166,7 +166,7 @@ body {
     margin-top: 78px;
     margin-bottom: 78px;
 }
-.about-pam-heading, .portfolio-heading, .price-heading, .want-photo-heading {
+.about-pam-heading, .portfolio-heading, .prices-heading, .services-heading, .want-photo-heading {
     font-family: var(--open-sans-font);
     font-weight: 700;
     font-size: 36px;
@@ -180,7 +180,7 @@ body {
     gap: 130px;
     align-items: center;
 }
-.about-pam-heading span, .portfolio-heading span, .price-heading span, .want-photo-heading span {
+.about-pam-heading span, .portfolio-heading span, .prices-heading span, .services-heading span, .want-photo-heading span {
     position: absolute;
     font-size: 70px;
     color: rgba(0, 0, 0, 0.02);
@@ -200,7 +200,7 @@ body {
     top: -51px;
     left: 1071px;
 }
-.read-more, .price-link {
+.read-more, .service-link {
     text-decoration: none;
     color: black;
     text-transform: lowercase;
@@ -235,29 +235,28 @@ body {
 .all-photos-div{
     margin-top: 70px;
 }
-
-.price-photos{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}   
-.photo1 {
-    grid-area: 1 / 1 / 3 / 2; 
+.services {
+    margin-bottom: 100px;
 }
-.photo2 { 
-    grid-area: 2 / 2 / 4 / 3;
+.services-heading {
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
-.photo3 { 
-    grid-area: 3 / 3 / 5 / 4;
+.service-wrapper {
+    justify-content: space-around;
+    
 }
-.price-link-text {
+.service-div {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    margin-top: -29px;
-    margin-bottom: 29px;
-    margin-right: 57px;
+    row-gap: 20px;
 }
+.service-link img {
+    position: relative;
+    top: 6px;
+}
+
 
 .want-photo {
     margin-top: 60px;
