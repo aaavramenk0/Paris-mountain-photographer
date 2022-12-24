@@ -27,4 +27,16 @@ const activeSlideHandler = (dotIndex) => {
 */
 
 const slideDiv = document.querySelector('.slide-div')
+const prevArrow = document.querySelector('.prev')
+const nextArrow = document.querySelector('.next')
+const dots = document.querySelectorAll('.dot');
 
+/* Scroll animation for arrows */
+prevArrow.addEventListener("click", () => {
+    slideDiv.scrollLeft -= 440;
+})
+nextArrow.addEventListener("click", () => {
+    slideDiv.scrollLeft += 440;
+})
+
+/* Scroll animation for dots */

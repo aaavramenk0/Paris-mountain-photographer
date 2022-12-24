@@ -10,7 +10,6 @@
 }
 html {
     scroll-behavior: smooth;
-    scroll-margin: 2em;
 }
 html, body {
     overflow-x: hidden;
@@ -115,9 +114,14 @@ body {
 }
 .slide-div {
     overflow-x: scroll;
-    gap: 100px;
+    scroll-behavior: smooth;
+    gap: 70px;
     display: flex;
     justify-content: space-between;
+}
+/* scrooll bar style in the slider*/  
+.slide-div::-webkit-scrollbar{
+    width: 40px;
 }
 .invisible {
     display: none;
