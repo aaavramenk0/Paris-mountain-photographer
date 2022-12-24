@@ -18,6 +18,7 @@ body {
     position: relative;
     font-family: var(--open-sans-font);
 }
+
 .about-pam-jones, .offer, .logo, .portfolio-heading, .prices, .services, .want-photo {
     margin-left: 120px;
 }
@@ -118,10 +119,24 @@ body {
     gap: 70px;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 10px;
+    cursor: grab;
 }
-/* scrooll bar style in the slider*/  
-.slide-div::-webkit-scrollbar{
-    width: 40px;
+.slide-div::-webkit-scrollbar {
+    height: 15px;
+    background-color: rgb(201, 201, 201);
+    padding-top: 10px;
+    border-radius: 15px;
+}
+.slide-div::-webkit-scrollbar-thumb {
+    background: rgb(136, 136, 136);
+    border-radius: 15px;
+}
+.slider-photo {
+    pointer-events: none;
+}
+.slide-div::-webkit-scrollbar-thumb:hover {
+    background: rgb(88, 88, 88);
 }
 .invisible {
     display: none;
