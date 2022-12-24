@@ -134,6 +134,7 @@ body {
 }
 .slider-photo {
     pointer-events: none;
+    z-index: -1;
 }
 .slide-div::-webkit-scrollbar-thumb:hover {
     background: rgb(88, 88, 88);
