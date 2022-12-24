@@ -31,26 +31,14 @@ orderBtn.addEventListener('animationend', () => {
     orderBtn.classList.remove('animate__pulse');
 });
 
-/*Services link animation */ 
-const serviceLinks = document.querySelectorAll('.service-link');
-
-for (let serviceLinkIndex = 0; serviceLinkIndex < serviceLinks.length; serviceLinkIndex++) {
-    serviceLinks[serviceLinkIndex].addEventListener("mouseover", () => {
-        serviceLinks[serviceLinkIndex].classList.add('animate__pulse');
-    })
-    serviceLinks[serviceLinkIndex].addEventListener("animationend", () => {
-        serviceLinks[serviceLinkIndex].classList.remove('animate__pulse');
-    })
-}
-
 /* Service photo animation */
-const servicePhotos = document.querySelectorAll('.service-photo');
+const serviceDiv = document.querySelectorAll('.service-div');
 
-for (let servicePhotoIndex = 0; servicePhotoIndex < servicePhotos.length; servicePhotoIndex++) {
-    servicePhotos[servicePhotoIndex].addEventListener("mouseover", () => {
-        servicePhotos[servicePhotoIndex].classList.add('animate__pulse');
+for (let serviceDivIndex = 0; serviceDivIndex < serviceDiv.length; serviceDivIndex++) {
+    serviceDiv[serviceDivIndex].addEventListener("mouseover", () => {
+        serviceDiv[serviceDivIndex].classList.add('animate__pulse');
     })
-    servicePhotos[servicePhotoIndex].addEventListener("animationend", () => {
-        servicePhotos[servicePhotoIndex].classList.remove('animate__pulse');
+    serviceDiv[serviceDivIndex].addEventListener("animationend", () => {
+        serviceDiv[serviceDivIndex].classList.remove('animate__pulse');
     })
 }
