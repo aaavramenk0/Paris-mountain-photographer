@@ -109,11 +109,15 @@ body {
 }
 .slider {
     width: 100%;
-    padding-left: 107px;
+    padding-left: 150px;
+    padding-right: 100px;
+    overflow-x: hidden;
 }
 .slide-div {
+    overflow-x: scroll;
+    gap: 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .invisible {
     display: none;
@@ -133,6 +137,18 @@ body {
 }
 .active-dot {
     background-color: #6B6B6B;
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 370px;
+}
+.prev {
+    left: 550px;
+}
+.next {
+    right: 50px;
 }
 
 .social-media-div {

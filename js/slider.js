@@ -1,3 +1,4 @@
+/* 
 const dots = document.querySelectorAll('.dot');
 const imgDiv = document.querySelectorAll('.slide-div')
 
@@ -23,3 +24,7 @@ const activeSlideHandler = (dotIndex) => {
     imgDiv[dotIndex].style.setProperty('--animate-duration', '1.7s');
     dots[dotIndex].classList.add('active-dot');
 }
+*/
+
+const slideDiv = document.querySelector('.slide-div')
+
