@@ -122,8 +122,9 @@ body {
     padding-bottom: 10px;
     cursor: grab;
 }
+/* Scroll bar styling*/
 .slide-div::-webkit-scrollbar {
-    height: 15px;
+    height: 7px;
     background-color: rgb(201, 201, 201);
     padding-top: 10px;
     border-radius: 15px;
