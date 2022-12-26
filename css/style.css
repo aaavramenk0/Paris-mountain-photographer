@@ -143,22 +143,6 @@ body {
 .invisible {
     display: none;
 }
-.dots {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-.dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #D9D9D9;
-    cursor: pointer;
-}
-.active-dot {
-    background-color: #6B6B6B;
-}
 /* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
