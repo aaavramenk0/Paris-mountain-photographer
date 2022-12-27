@@ -42,3 +42,25 @@ for (let serviceDivIndex = 0; serviceDivIndex < serviceDiv.length; serviceDivInd
         serviceDiv[serviceDivIndex].classList.remove('animate__pulse');
     })
 }
+
+/* Price cards buttons animation */
+const priceCardBtn = document.querySelectorAll('.price-card-button-div');
+
+for (let priceCardBtnIndex = 0; priceCardBtnIndex < priceCardBtn.length; priceCardBtnIndex++) {
+    priceCardBtn[priceCardBtnIndex].addEventListener("mouseover", () => {
+        priceCardBtn[priceCardBtnIndex].classList.add('animate__pulse');
+    })
+    priceCardBtn[priceCardBtnIndex].addEventListener("animationend", () => {
+        priceCardBtn[priceCardBtnIndex].classList.remove('animate__pulse');
+    })
+}
+
+/* Form button animation*/
+const formBtn = document.querySelector('.form-btn');
+
+formBtn.addEventListener("mouseover", () => {
+    formBtn.classList.add('animate__pulse');
+})
+formBtn.addEventListener('animationend', () => {
+    formBtn.classList.remove('animate__pulse');
+});
