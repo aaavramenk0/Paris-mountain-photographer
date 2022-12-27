@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+}
 :root {
     --montserrat-font: 'Montserrat', sans-serif;
     --open-sans-font: 'Open Sans', sans-serif; 
@@ -65,7 +68,6 @@ body {
     margin-right: 153px;
 }
 .navbar-link {
-    text-decoration: none;
     font-family: var(--montserrat-font);
     font-weight: 300;
     font-size: 20px;
@@ -96,7 +98,6 @@ body {
     color: black;
 }
 .order-btn {
-    text-decoration: none;
     color: white;
     line-height: 33px;
     font-size: 24px;
@@ -174,7 +175,6 @@ body {
     padding-right: 200px;
 }
 .view-more {
-    text-decoration: none;
     color: black;
     text-transform: lowercase;
     font-family: var(--montserrat-font);
@@ -225,7 +225,6 @@ body {
     left: 1071px;
 }
 .read-more, .service-link {
-    text-decoration: none;
     color: black;
     text-transform: lowercase;
     font-family: var(--montserrat-font);
@@ -261,6 +260,7 @@ body {
 }
 .services {
     margin-bottom: 100px;
+    margin-right: 70px;
 }
 .services-heading {
     margin-top: 50px;
@@ -281,13 +281,70 @@ body {
     position: relative;
     top: 6px;
 }
-
-
+.price-cards {
+    justify-content: center;
+    gap: 70px;
+    margin-right: 70px;
+}
+.price-card{
+    padding: 30px;
+    padding-bottom: 50px;
+    background: rgba(61, 61, 61, 1);
+    font-family: var(--montserrat-font);
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+}
+.price-card-heading {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.price-card-description-wrapper{
+    justify-content: space-between;
+    gap: 100px;
+    padding: 15px 0;
+}
+.price-card-line {
+    height: 1px;
+    border: 0px;
+    background: #fff;
+}
+.price-card-price {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    margin: 25px 0 37px 0;
+}
+.price-card-button {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #fff;
+    padding: 12px 20px; 
+    border: 1px solid #fff;
+}
+.standart {
+    background: #fff;
+    color: #000000;
+    border: 1px solid #000;
+}
+.standart .price-card-line {
+    background: #000;
+}
+.standart .price-card-button {
+    border: 0px;
+    border: 1px solid #000;
+    background: #000000;
+}
 .want-photo {
     margin-top: 60px;
     margin-bottom: 60px;
 }
-
 .form {
     display: flex;
     flex-direction: column;
@@ -398,8 +455,7 @@ input::placeholder {
     font-weight: 300;
     font-size: 12px;
     line-height: 15px;
-    color: #FFFFFF;
-    text-decoration: none;  
+    color: #FFFFFF;  
 }
 
 
