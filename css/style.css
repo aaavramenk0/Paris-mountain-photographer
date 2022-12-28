@@ -122,7 +122,25 @@ body {
     display: flex;
     justify-content: space-between;
     padding-bottom: 10px;
-    cursor: grab;
+    /* cursor: grab; */
+}
+.bottom-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.dots {
+    width: 28px;
+    height: 3px;
+    margin: 5px 7px 0px;
+    background-color: rgba(217, 217, 217, 1);
+}
+.dots:hover{
+    background-color: rgba(107, 107, 107, 1);
+    cursor: pointer;
+}
+.active-dot {
+    background-color: rgba(107, 107, 107, 1);
 }
 /* Scroll bar styling*/
 .slide-div::-webkit-scrollbar {
@@ -130,6 +148,8 @@ body {
     background-color: rgb(201, 201, 201);
     padding-top: 10px;
     border-radius: 15px;
+    /* hiding the scroll bar */ 
+    display: none;
 }
 .slide-div::-webkit-scrollbar-thumb {
     background: rgb(136, 136, 136);
@@ -152,10 +172,10 @@ body {
     top: 370px;
 }
 .prev {
-    left: 550px;
+    left: 545px;
 }
 .next {
-    right: 50px;
+    right: 45px;
 }
 
 .social-media-div {
