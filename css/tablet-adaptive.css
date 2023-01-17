@@ -1,6 +1,41 @@
 /* Tablet: 769px - 1440px*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-@media (max-width: 1440px) {
-    
+@media (max-width: 1250px){
+    .about-pam-jones, .offer, .logo, .portfolio-heading, .prices, .services, .want-photo {
+        margin-left: 50px;
+    }
+    .prev {
+        left: 475px;
+    }
+    .social-media {
+        padding-left: 70px;
+    }
+    .dots {
+        display: none;
+    }
+    .about-pam {
+        gap: 50px;
+    }
+    .about-pam-text {
+        font-size: 24px;
+        padding-right: 50px;
+    }
+    .footer-wrapper {
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 1150px){
+    .navbar {
+        column-gap: 50px;
+    }
+}
+
+@media (max-width: 1000px){
+    .navbar {
+        column-gap: 50px;
+    }
 }
