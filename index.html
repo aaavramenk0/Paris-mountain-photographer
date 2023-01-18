@@ -305,9 +305,23 @@
         <div class="wrapper">
             <div>
                 <form action="submit" class="form">
-                    <input type="text" name="name" id="name" placeholder="Name">
-                    <input type="text" name="email" id="email" placeholder="E-mail">
-                    <input type="number" name="number" id="number" placeholder="Phone number"> 
+                    <input type="text" name="name" id="name" placeholder="Name" required>
+                    <input type="text" name="email" id="email" placeholder="E-mail" required>
+                    <input type="number" name="number" id="number" placeholder="Phone number" required>
+                    <div>
+                        <label for="date">Date of photoshoot: </label><input type="date" name="date" id="date" placeholder="Date of photoshoot" required>
+                    </div>
+                    <div>
+                        <label for="date">Type:</label>
+                        <select name="type-selection" id="type-selection" required>
+                            <option value="">-- Choose a type of photoshoot --</option>
+                            <option value="">MINIMUM</option>
+                            <option value="">STANDART</option>
+                            <option value="">PRO</option>
+                        </select>
+                    </div>
+                    <textarea name="message" id="form-message" cols="30" rows="5" placeholder="Enter your message"></textarea>
+
                     <div class="form-btn animate__animated">
                         <a href="#">Order now</a>
                     </div>

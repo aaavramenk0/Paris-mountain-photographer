@@ -383,7 +383,21 @@ body {
     border: 0;
     border-bottom: 1px solid #4F4F4F;
 }
-input::placeholder {
+input::placeholder, textarea::placeholder {
+    color: rgba(75, 75, 75, 0.49);
+}
+select, textarea, label, option {
+    font-family: var(--open-sans-font);
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+    letter-spacing: 1%;
+}
+textarea {
+    padding: 5px;
+    resize: none;
+}
+label {
     color: rgba(75, 75, 75, 0.49);
 }
 .form-btn {
