@@ -32,10 +32,71 @@
     .navbar {
         column-gap: 50px;
     }
+    .service-wrapper {
+        display: grid;
+        grid-template-columns: 1fr, 2;
+        grid-template-rows: 1fr, 2;
+        grid-gap: 15px;
+    }
+    .service-wrapper .one {
+        grid-area: 1 / 1 / 1 / 1;
+    }
+    .service-wrapper .two {
+        grid-area: 1 / 2 / 1 / 2;
+    }
+    .service-wrapper .three {
+        grid-area: 2 / 1 / 2 / 1;
+    }
+    .service-wrapper .four {
+        grid-area: 2 / 2 / 2 / 2;
+    }
+
+    .price-cards {
+        display: grid;
+        grid-template-columns: 1fr, 2;
+        grid-template-rows: 1fr, 2;
+    }
+    .minimum {
+        grid-area: 1 / 1 / 1 / 1; 
+    }
+    .standart {
+        grid-area: 1 / 2 / 1 / 2;
+    }
+    .pro {
+        grid-area: 2 / 1 / 2 / 1;
+    }
+    .footer-navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
 }
 
 @media (max-width: 1000px){
     .navbar {
         column-gap: 50px;
     }
+}
+
+@media (max-width: 900px){
+    .logo {
+        margin-right: 25px;
+    }
+    .slider {
+        display: none;
+    }
+    .offer-text {
+        text-align: center;
+        width: 100vw;
+    }
+    .offer-text a {
+        margin: 0 auto;
+    }
+    .social-media-div {
+        display: none;
+    }
+    .about-pam-text {
+        font-size: 16px;
+    } 
 }

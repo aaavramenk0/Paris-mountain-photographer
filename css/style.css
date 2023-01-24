@@ -8,6 +8,9 @@ a{
     text-decoration: none;
     color: #fff;
 }
+li {
+    list-style: none;
+}
 :root {
     --montserrat-font: 'Montserrat', sans-serif;
     --open-sans-font: 'Open Sans', sans-serif; 
