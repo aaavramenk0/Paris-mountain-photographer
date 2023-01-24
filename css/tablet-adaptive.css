@@ -80,6 +80,9 @@
 }
 
 @media (max-width: 900px){
+    .navbar {
+        column-gap: 15px;
+    }
     .logo {
         margin-right: 25px;
     }
